@@ -1,0 +1,23 @@
+int MyPINS[7]={2,3,5,6,7,8,9};
+int ZERO[7]={1,1,1,1,1,1,0};
+int ONE[]={0,1,1,0,0,0,0};
+int TWO[]={1,1,0,1,1,0,1};
+int THREE[]={1,1,1,1,0,0,1};
+int FOUR[]={0,1,1,0,0,1,1};
+int FIVE[]={1,0,1,1,0,0,0};
+int SIX[]={0,0,1,1,1,1,1};
+int SEVEN[]={1,1,1,0,0,0,0};
+int EIGHT[]={1,1,1,1,1,1,1};
+int NINE[]={1,1,1,1,0,1,1};
+int x = 0;
+void setup() {
+ Serial.begin(9600);
+  for (int i = 0; i <= 10; i++) {
+    pinMode(MYPINS[i], OUTPUT);
+    delay(100);
+  }
+ }
+void loop() {
+  for (int j = 0; j <= 7; j++) {
+    digitalWrite( MyPINS[j], ZERO[j]);
+    delay(1000);}}
